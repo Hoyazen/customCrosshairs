@@ -250,6 +250,10 @@ header.scroll .navbar {
 .content .crosshair-container .crosshair-content p {
   font-size: 32px;
   color: #ffe3c9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 150px;
 }
 .content .crosshair-container .crosshair-content img {
   background-color: #ffe3c9;

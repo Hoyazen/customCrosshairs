@@ -52,6 +52,10 @@
       p {
         font-size: 32px;
         color: #ffe3c9;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 150px;
       }
 
       img {
