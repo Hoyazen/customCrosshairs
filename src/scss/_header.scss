@@ -1,0 +1,146 @@
+header {
+  position: fixed;
+  max-width: 1600px;
+  width: 100%;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffdab4;
+    padding: 0 20px;
+    height: 80px;
+    transition: all 0.3s ease-in-out;
+
+    .logo {
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: start;
+        gap: 20px;
+
+        p {
+          font-size: 3rem;
+          color: #a77b6b;
+
+          @media (max-width: 480px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .nav {
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        li {
+          font-size: 2rem;
+          text-transform: uppercase;
+          color: #a77b6b;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: #7e4f3e;
+            transform: translateY(-3px);
+          }
+        }
+      }
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    .burger {
+      display: none;
+
+      svg {
+        width: 48px;
+        height: 48px;
+        stroke: #a77b6b;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          stroke: #7e4f3e;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        display: flex;
+      }
+    }
+
+    .burger-close {
+      display: none;
+
+      svg {
+        width: 48px;
+        height: 48px;
+        stroke: #a77b6b;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          stroke: #7e4f3e;
+        }
+      }
+    }
+  }
+
+  .nav-burger {
+    position: fixed;
+    top: 92px;
+    right: -200px;
+    transition: all 0.3s ease-in-out;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      background-color: #ffdab4;
+      padding: 0 20px;
+      border-radius: 10px;
+
+      li {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #a77b6b;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #7e4f3e;
+        }
+      }
+    }
+  }
+}
+
+header.menu-open {
+  .burger {
+    display: none;
+  }
+
+  .burger-close {
+    display: flex;
+  }
+
+  .nav-burger {
+    right: 20px;
+  }
+}
+
+header.scroll {
+  .navbar {
+    height: 65px;
+  }
+}

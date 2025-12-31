@@ -1,0 +1,57 @@
+/* RESET */
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Suppression des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hauteur de base */
+html,
+body {
+  height: 100%;
+}
+
+/* Typographie de base */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listes */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Tableaux */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+button {
+  font-family: "Micro 5", sans-serif;
+}
+/* RESET */

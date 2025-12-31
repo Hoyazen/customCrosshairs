@@ -1,0 +1,158 @@
+.content {
+  padding-top: 60px;
+  background-color: #ffe3c9;
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: #3b2a24;
+
+      span {
+        color: #a77b6b;
+      }
+    }
+  }
+
+  .crosshair-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 20px;
+
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 728px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .crosshair-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 200px;
+      background-color: #a77b6b;
+      border-radius: 20px;
+      padding: 20px 0;
+
+      p {
+        font-size: 32px;
+        color: #ffe3c9;
+      }
+
+      img {
+        background-color: #ffe3c9;
+        padding: 25px;
+        border-radius: 20px;
+        image-rendering: pixelated;
+      }
+      a {
+        button {
+          background-color: #ffe3c9;
+          font-size: 18px;
+          border-radius: 20px;
+          padding: 5px 10px;
+          border: none;
+          cursor: pointer;
+          color: #a77b6b;
+          border: 2px solid #a77b6b;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: #a77b6b;
+            color: #ffe3c9;
+            border: 2px solid #ffe3c9;
+          }
+        }
+      }
+    }
+  }
+
+  .etape-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffdab4;
+
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .etape-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #a77b6b;
+      padding: 20px;
+      border-radius: 20px;
+      min-width: 200px;
+
+      h3 {
+        color: #ffe3c9;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: #ffe3c9;
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+
+      span {
+        color: #a77b6b;
+        font-size: 24px;
+        background-color: #ffe3c9;
+        padding: 5px 20px;
+        border-radius: 20px;
+      }
+
+      img {
+        margin-top: 20px;
+        max-width: 400px;
+
+        @media (max-width: 480px) {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #ffdab4;
+
+    p {
+      color: #3b2a24;
+      font-size: 24px;
+    }
+  }
+}
+
+#guide {
+  background-color: #ffdab4;
+}

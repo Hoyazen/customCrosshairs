@@ -1,0 +1,9 @@
+# Dossier des dépendances Node
+node_modules/
+
+# Dossiers et fichiers de configuration VS Code
+.vscode/
+
+# Logs et fichiers temporaires
+*.log
+*.tmp
