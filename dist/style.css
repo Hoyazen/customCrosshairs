@@ -51,7 +51,8 @@ h6,
 p,
 span,
 ul,
-button {
+button,
+a {
   font-family: "Micro 5", sans-serif;
 }
 
@@ -261,7 +262,7 @@ header.scroll .navbar {
   border-radius: 20px;
   image-rendering: pixelated;
 }
-.content .crosshair-container .crosshair-content a button {
+.content .crosshair-container .crosshair-content a {
   background-color: #ffe3c9;
   font-size: 18px;
   border-radius: 20px;
@@ -272,7 +273,7 @@ header.scroll .navbar {
   border: 2px solid #a77b6b;
   transition: all 0.3s ease-in-out;
 }
-.content .crosshair-container .crosshair-content a button:hover {
+.content .crosshair-container .crosshair-content a:hover {
   background-color: #a77b6b;
   color: #ffe3c9;
   border: 2px solid #ffe3c9;
