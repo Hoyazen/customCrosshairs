@@ -240,11 +240,12 @@ header.scroll .navbar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
   width: 200px;
   background-color: #a77b6b;
   border-radius: 20px;
-  padding: 20px 0;
+  padding: 20px;
 }
 .content .crosshair-container .crosshair-content p {
   font-size: 32px;
